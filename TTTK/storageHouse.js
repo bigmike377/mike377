@@ -66,6 +66,7 @@ export default class Storage extends Component {
                             renderItem={({item, index}) => {
                             return (
                                 <FlatListItem item={item} index={index}></FlatListItem>
+                            
                             );
                             }}>
                         </FlatList>

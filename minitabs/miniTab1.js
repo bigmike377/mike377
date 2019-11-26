@@ -35,9 +35,6 @@ export default class Tab1 extends React.Component {
             <Root>
                 <Container>
                     <Content>
-                        {/* <Button>
-                        <Text>Search</Text>
-                        </Button> */}
                         <List>
                             <View>
                                 {this.state.content ? <ListItem avatar>
@@ -59,16 +56,16 @@ export default class Tab1 extends React.Component {
                                             <Text></Text>
 
                                             <Text></Text>
-                                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', }}>
-                                                <Button Success onPress={this.componentHideAndShow}>
-                                                    <Icon name="ios-checkmark-circle-outline" />
-                                                </Button>
-                                                <Button onPress={this.componentHideAndShow}>
-                                                    <Icon name="ios-close-circle-outline" />
-                                                </Button>
-                                                <Button>
-                                                    <Icon name="ios-chatbubbles" />
-                                                </Button>
+                                            <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingLeft: 20, paddingRight: 20 }}>
+                                                <Icon name="ios-checkmark-circle-outline" onPress={this.componentHideAndShow} />
+                                                <Icon name="ios-chatbubbles" onPress={() =>
+                                                    Toast.show({
+                                                        text: "Xin vui lòng liên kiết tài khoản.",
+                                                        position: "top",
+                                                        buttonTextStyle: { color: "#008000" },
+                                                        buttonStyle: { backgroundColor: "#5cb85c" }
+                                                    })} />
+                                                <Icon name="ios-close-circle-outline" onPress={this.componentHideAndShow} />
                                             </View>
                                         </Body>
                                     </View>
@@ -98,46 +95,17 @@ export default class Tab1 extends React.Component {
                                         <Text note>(500) Kháng sinh hữu ích trong điều trị một số bệnh nhiễm khuẩn.</Text>
                                         <Text> - Pymenospain - </Text>
                                         <Text note>(200) Các tác dụng phụ hiếm gặp như buồn nôn, chóng mặt, đau đầu, trống ngực.</Text>
-                                        {/* <Button full light
-                                            onPress={this.componentHideAndShow}>
-                                            <Text style={{ justifyContent: 'center', alignContent: 'center', fontSize: 20, color: 'blue' }}>Nhận Đơn</Text>
-                                        </Button> */}
                                         <Text></Text>
-                                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', }}>
-                                            {/* <Button style={{
-                                                padding: 30,
-                                                width: 115, height: 40,
-                                            }}
-                                                onPress={this.componentHideAndShow}>
-
-                                                <Text style={{ fontSize: 15, textAlign: 'center', color: 'white' }}>Cancel</Text>
-                                            </Button> */}
-                                            <Button full light onPress={this.componentHideAndShow}>
-                                                <Icon name="ios-checkmark-circle-outline" />
-                                            </Button>
-                                            <Button full light onPress={this.componentHideAndShow}>
-                                                <Icon name="ios-close-circle-outline" />
-                                            </Button>
-                                            <Button full light>
-                                                <Icon name="ios-chatbubbles" />
-                                            </Button>
-
-
-                                            {/* <Button style={{
-                                                padding: 30,
-                                                width: 115, height: 40,
-                                            }} >
-                                                <Text style={{ fontSize: 13, textAlign: 'auto', color: 'white' }}>Message</Text>
-
-                                            </Button> */}
+                                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingLeft: 20, paddingRight: 20 }}>
+                                            <Icon name="ios-checkmark-circle-outline" onPress={this.componentHideAndShow} />
+                                            <Icon name="ios-chatbubbles" />
+                                            <Icon name="ios-close-circle-outline" onPress={this.componentHideAndShow} />
                                         </View>
-
                                     </Body>
                                     <Right>
                                         <Text note>4:20 pm</Text>
                                         <Button transparent onPress={() => { alert(' Lượng thuốc trong kho vẫn đủ '); }}>
                                             <Icon name='bulb' />
-
                                         </Button>
                                     </Right>
                                 </ListItem> : null}
@@ -158,22 +126,18 @@ export default class Tab1 extends React.Component {
                                         <Text note>(200) Các tác dụng phụ hiếm gặp như buồn nôn, chóng mặt, đau đầu, trống ngực.</Text>
 
                                         <Text></Text>
-                                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', }}>
-                                            <Button full light onPress={() =>
-                                                Toast.show({
-                                                    text: "Lỗi! Đơn hàng chưa được nhận.",
-                                                    position: "top",
-                                                    buttonTextStyle: { color: "#008000" },
-                                                    buttonStyle: { backgroundColor: "#5cb85c" }
-                                                })}>
-                                                <Icon name="ios-checkmark-circle-outline" />
-                                            </Button>
-                                            <Button full light onPress={this.componentHideAndShow}>
-                                                <Icon name="ios-close-circle-outline" />
-                                            </Button>
-                                            <Button full light>
-                                                <Icon name="ios-chatbubbles" />
-                                            </Button>
+                                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingLeft: 20, paddingRight: 20 }}>
+                                            <Icon name="ios-checkmark-circle-outline"
+                                                onPress={() =>
+                                                    Toast.show({
+                                                        text: "Lỗi! Đơn hàng chưa được nhận.",
+                                                        position: "top",
+                                                        buttonTextStyle: { color: "#008000" },
+                                                        buttonStyle: { backgroundColor: "#5cb85c" }
+                                                    })}
+                                            />
+                                            <Icon name="ios-chatbubbles" />
+                                            <Icon name="ios-close-circle-outline" onPress={this.componentHideAndShow} />
                                         </View>
                                     </Body>
                                     <Right>

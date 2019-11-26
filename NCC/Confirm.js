@@ -22,11 +22,6 @@ class FlatListItem extends Component {
                 <TouchableOpacity>
                     <View style={styleContent}>
                         <ListItem >
-                            {/* <View style={{flex : 2}}>
-                        <Left>
-
-                        </Left>
-                    </View>     */}
                             <View style={{ flex: 8 }}>
                                 <Body>
                                     <Text style={flatListNameDrug}> {this.props.item.name} </Text>
@@ -84,7 +79,7 @@ export default class Confirm extends Component {
         return (
 
             <Container>
-                <View style={{ flex: 6, marginTop: 5 }}>
+                <View style={{ flex: 5, marginTop: 5 }}>
                     <FlatList
                         data={this.state.dataList}
                         renderItem={({ item, index }) => {
@@ -96,7 +91,13 @@ export default class Confirm extends Component {
                         }}
                     >
                     </FlatList>
+                    
                 </View>
+                <Left style={{flex: 1}}>
+                        <Button transparent onPress={() => this.props.navigation.navigate('Market')}>
+                            <Text>Continue</Text>
+                        </Button>
+                    </Left>
                 <View style={{ flex: 4 }}>
                     <List>
                         <ListItem thumbnail>
@@ -116,9 +117,6 @@ export default class Confirm extends Component {
                             <Right style={{ alignItems: 'center', justifyContent: 'center' }}>
                                 <Button transparent onPress={() => this.props.navigation.navigate('NoteTab3')}>
                                     <Text>View</Text>
-                                </Button>
-                                <Button transparent onPress={() => this.props.navigation.navigate('TwoTwo')}>
-                                    <Text>Continue</Text>
                                 </Button>
                             </Right>
                         </ListItem>
