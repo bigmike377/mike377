@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableHighlight, Alert, Modal } from 'react-native';
+import { View, TouchableHighlight, Alert, Modal, Platform, StyleSheet } from 'react-native';
 import { Fragment } from 'react';
 import {
     Container, Header, Content, Footer, FooterTab, Button, Text, Form, Item, Tabs, TabHeading, Tab,
@@ -46,10 +46,10 @@ export default class Tab2 extends React.Component {
                                 <View style={{ justifyContent: 'center', paddingTop: 300, paddingLeft: 40 }}>
                                     <Text style={{ fontSize: 20 }}> Bạn có muốn huỷ đơn hàng không? </Text>
                                     <Text></Text>
-                                    <View style={{ paddingLeft: 55 }}>
+                                    <View style={{ paddingLeft: 65 }}>
                                         <Button full light
                                             style={{
-                                                justifyContent:'center',alignItems: 'center' ,padding: 30,
+                                                justifyContent: 'center', alignItems: 'center', padding: 30,
                                                 width: 180, height: 50, borderRadius: 100,
                                             }}
                                             onPress={() => {
@@ -59,13 +59,13 @@ export default class Tab2 extends React.Component {
                                         </Button>
                                         <Button
                                             style={{
-                                                justifyContent:'center',alignItems: 'center' ,padding: 30,
+                                                justifyContent: 'center', alignItems: 'center', padding: 30,
                                                 width: 180, height: 50, borderRadius: 100
                                             }}
                                             onPress={() => {
                                                 this.setModalVisible(!this.state.modalVisible);
                                             }}>
-                                            <Text style={{justifyContent: 'center', alignContent: 'center', fontSize: 20}}>Cancel</Text>
+                                            <Text style={{ justifyContent: 'center', alignContent: 'center', fontSize: 20 }}>Cancel</Text>
                                         </Button>
                                     </View>
                                 </View>

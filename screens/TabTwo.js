@@ -23,11 +23,11 @@ export default class TabTwo extends React.Component {
         return (
             <Container>
                 <Content>
-                    <Item>
+                    {/* <Item>
                         <Icon name="ios-search" />
                         <Input placeholder="Tên nhà cung cấp" />
                         <Icon name="cart" onPress={() => this.props.navigation.navigate('Market')} />
-                    </Item>
+                    </Item> */}
                     <List>
                         <ListItem avatar onPress={() => this.props.navigation.navigate('NCC1')}>
                             <Left>

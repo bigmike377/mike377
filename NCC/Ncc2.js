@@ -38,7 +38,7 @@ export default class NCC2 extends React.Component {
                         <Text>Nhà Cung Cấp</Text>
                     </Button>
                 </Segment> */}
-                <View style={{flex: 9}}>
+                <View style={{ flex: 9 }}>
                     <Content>
                         <List>
                             <ListItem avatar>

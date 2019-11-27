@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Text, View, 
-    ListItem, Content, List, Tab, Tabs, TabHeading, Thumbnail, Toast, Root, Footer} from 'native-base';
-  
+import {
+    Container, Header, Left, Body, Right, Button, Icon, Title, Text, View,
+    ListItem, Content, List, Tab, Tabs, TabHeading, Thumbnail, Toast, Root, Footer
+} from 'native-base';
+
 
 export default class NoteTab4 extends React.Component {
-    static navigationOptions={
+    static navigationOptions = {
         title: 'Thông Tin Hỗ Trợ',
     };
     constructor(props) {
         super(props);
         this.state = {
-          showToast: false
+            showToast: false
         };
     }
-    
+
     render() {
         return (
-            
-            <View style={{alignItems: 'center', justifyContent: 'center', flex: 3 }}>   
-                
-                <Thumbnail  large source={require('../img/Logo.jpg')}  />
-            </View>  
+
+            <View style={{ alignItems: 'center', justifyContent: 'center', flex: 3 }}>
+
+                <Thumbnail large source={require('../img/Logo.jpg')} />
+            </View>
         );
     }
 }

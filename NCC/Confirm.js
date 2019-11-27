@@ -91,13 +91,13 @@ export default class Confirm extends Component {
                         }}
                     >
                     </FlatList>
-                    
+
                 </View>
-                <Left style={{flex: 1}}>
-                        <Button transparent onPress={() => this.props.navigation.navigate('Market')}>
-                            <Text>Continue</Text>
-                        </Button>
-                    </Left>
+                <Left style={{ flex: 1 }}>
+                    <Button transparent onPress={() => this.props.navigation.navigate('Market')}>
+                        <Text>Continue</Text>
+                    </Button>
+                </Left>
                 <View style={{ flex: 4 }}>
                     <List>
                         <ListItem thumbnail>
