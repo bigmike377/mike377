@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { FlatList, StyleSheet, Image, TouchableOpacity, SafeAreaView, View, TextInput } from 'react-native';
-import { Container, Header, Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button, Icon, Item, Input, Tabs, Tab, Footer } from 'native-base';
+import { FlatList, StyleSheet, TouchableOpacity, View, TextInput } from 'react-native';
+import {
+    Container, List, ListItem, Thumbnail, Text,
+    Left, Body, Right, Button, Icon, Item, Footer
+} from 'native-base';
 
 class FlatListItem extends Component {
     render() {
-        const { flatListNameDrug, flatListUsesDrug, flatListQuantityDrug, styleContent } = styles;
+        const { flatListNameDrug, styleContent } = styles;
         const { item } = this.props;
 
         return (

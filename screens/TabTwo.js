@@ -12,7 +12,7 @@ import {
     Container, Header, Content, Footer, FooterTab, Button, Text, Form, Item,
     Input, Icon, ListItem, List, Right, Left, Title, Body, CheckBox, Thumbnail, Toast, Badge, Segment
 } from 'native-base';
-
+import FooterApp from '../components/FooterApp';
 
 export default class TabTwo extends React.Component {
     static navigationOptions = {
@@ -67,31 +67,7 @@ export default class TabTwo extends React.Component {
                         </ListItem>
                     </List>
                 </Content>
-
-                <Footer>
-                    <FooterTab>
-                        <Button badge vertical
-                            onPress={() => this.props.navigation.navigate('First')}>
-                            <Badge><Text>3</Text></Badge>
-                            <Icon name="apps" />
-                            <Text>Bảng tin</Text>
-                        </Button>
-                        <Button vertical
-                            onPress={() => this.props.navigation.navigate('OneOne')}>
-                            <Icon name="paper" />
-                            <Text>Đơn</Text>
-                        </Button>
-                        <Button vertical active>
-                            <Icon active name="navigate" />
-                            <Text>NCC</Text>
-                        </Button>
-                        <Button vertical
-                            onPress={() => this.props.navigation.navigate('Three')}>
-                            <Icon name="person" />
-                            <Text>Tài khoản</Text>
-                        </Button>
-                    </FooterTab>
-                </Footer>
+                <FooterApp navigation = {this.props.navigation}/>
 
             </Container>
 

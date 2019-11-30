@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, Switch, Text } from 'react-native';
-import { Fragment } from 'react';
+import { View, Text } from 'react-native';
 import {
-    Container, Header, Content, Footer, FooterTab, Button, Form, Item, Tabs, TabHeading, Tab,
-    Input, Icon, ListItem, List, Right, Left, Title, Body, CheckBox, Thumbnail, Toast, Badge, Root
+    Container, Content, Button,
+    Icon, ListItem, List, Right, Left, Body, Thumbnail, Toast, Root
 } from 'native-base';
 
 
@@ -152,32 +151,6 @@ export default class Tab1 extends React.Component {
 
                         </List>
                     </Content>
-
-                    {/* <Footer>
-                        <FooterTab>
-                            <Button badge vertical 
-                                onPress={() => this.props.navigation.navigate('First')}>
-                                <Badge><Text>2</Text></Badge>
-                                <Icon name="apps" />
-                                <Text>Bảng tin</Text>
-                            </Button>
-                            <Button vertical active>
-                                <Icon name="paper" />
-                                <Text>Đơn</Text>
-                            </Button>
-                            <Button vertical 
-                                onPress={() => this.props.navigation.navigate('TwoTwo')}>
-                                <Icon active name="navigate" />
-                                <Text>NCC</Text>
-                            </Button>
-                            <Button vertical
-                                onPress={() => this.props.navigation.navigate('Three')}>
-                                <Icon name="person" />
-                                <Text>Tài khoản</Text>
-                            </Button>
-                        </FooterTab>
-                    </Footer> */}
-
                 </Container>
             </Root>
         );

@@ -71,7 +71,7 @@ export default class TabThree extends React.Component {
 
                     <Footer>
                         <Button
-                            onPress={() => this.props.navigation.navigate('Home')}
+                            onPress={() => this.props.navigation.navigate('Details')}
                             style={{
                                 alignItems: 'center', justifyContent: 'center', padding: 30,
                                 width: 180, height: 50, borderRadius: 100

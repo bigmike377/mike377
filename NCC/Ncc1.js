@@ -5,12 +5,11 @@
  * @format
  * @flow
  */
-import React, { Component } from 'react';
+import React from 'react';
 import { View } from 'react-native';
-import { Fragment } from 'react';
 import {
-    Container, Header, Content, Footer, FooterTab, Button, Text, Form, Item, Picker,
-    Input, Icon, ListItem, List, Right, Left, Title, Body, CheckBox, Thumbnail, Toast, Badge, Segment
+    Container, Content, Button, Text,
+    Icon, ListItem, List, Right, Left, Body, Thumbnail
 } from 'native-base';
 
 
@@ -84,27 +83,6 @@ export default class NCC1 extends React.Component {
                         <Text style={{ justifyContent: 'center', alignContent: 'center', fontSize: 15, color: 'blue' }}>Mua Hàng</Text>
                     </Button>
                 </View>
-                {/* <Button badge vertical
-                            onPress={() => this.props.navigation.navigate('First')}>
-                            <Badge><Text>3</Text></Badge>
-                            <Icon name="apps" />
-                            <Text>Bảng tin</Text>
-                        </Button>
-                        <Button vertical 
-                            onPress={() => this.props.navigation.navigate('OneOne')}>
-                            <Icon name="paper" />
-                            <Text>Đơn</Text>
-                        </Button>
-                        <Button vertical active>
-                            <Icon active name="navigate" />
-                            <Text>NCC</Text>
-                        </Button>
-                        <Button vertical
-                            onPress={() => this.props.navigation.navigate('Three')}>
-                            <Icon name="person" />
-                            <Text>Tài khoản</Text>
-                        </Button> */}
-
             </Container>
         );
     }

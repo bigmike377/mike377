@@ -1,9 +1,8 @@
 import React from 'react';
-import { View, Image, StyleSheet, ImageBackground } from 'react-native';
-import { Fragment } from 'react';
+import { View, StyleSheet } from 'react-native';
 import {
-    Container, Header, Content, Footer, FooterTab, Button, Text, Form, Item,
-    Input, Icon, ListItem, List, Right, Left, Title, Body, CheckBox, Thumbnail
+    Container, Footer, FooterTab, Button, Text, Form, Item,
+    Input, ListItem, Body, CheckBox, Thumbnail
 } from 'native-base';
 
 
@@ -12,7 +11,6 @@ export default class Login extends React.Component {
         title: 'MedApp',
     };
     render() {
-        var { navigate } = this.props.navigation;
         return (
             <Container style={style.container}>
                 <View style={{ alignItems: 'center', justifyContent: 'center', flex: 3 }}>

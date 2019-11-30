@@ -137,6 +137,7 @@ export default class Market extends Component {
         );
     }
 }
+
 const styles = StyleSheet.create({
     flatListNameDrug: {
         color: 'black',

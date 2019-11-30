@@ -7,10 +7,9 @@
  */
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { Fragment } from 'react';
 import {
-    Container, Header, Content, Footer, FooterTab, Button, Text, Form, Item, Picker,
-    Input, Icon, ListItem, List, Right, Left, Title, Body, CheckBox, Thumbnail, Toast, Badge, Segment
+    Container, Content, Button, Text,
+    Icon, ListItem, List, Right, Left, Body, Thumbnail,
 } from 'native-base';
 
 
@@ -24,12 +23,6 @@ export default class NCC3 extends React.Component {
             selected: "key0"
         };
     }
-    // onValueChange( value: number) {
-    //     this.setState({
-    //       selected: value
-    //     });
-    //   }
-
     render() {
         return (
             <Container>
@@ -55,21 +48,6 @@ export default class NCC3 extends React.Component {
                                         <Text note></Text>
                                         <Text note>REACT LAB</Text>
                                         <Text note></Text>
-                                        {/* <Form>
-                                        <Picker
-                                        mode="dropdown"
-                                        iosIcon={<Icon name="arrow-down" />}
-                                        style={{ width: undefined }}
-                                        selectedValue={this.state.selected}
-                                        onValueChange={this.onValueChange.bind(this)}
-                                        >
-                                            <Picker.Item label="0" value="key0" />
-                                            <Picker.Item label="15" value="key1" />
-                                            <Picker.Item label="20" value="key2" />
-                                            <Picker.Item label="25" value="key3" />
-                                            <Picker.Item label="30" value="key4" />
-                                        </Picker>
-                                </Form> */}
                                     </Content>
                                     <Content>
                                         <Text> - Cannabis - </Text>
