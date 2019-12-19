@@ -32,7 +32,6 @@ export default class FirstScreen extends React.Component {
 
         return (
             <Container>
-
                 {/*         
                 <Header searchBar rounded>
                     <Item>
@@ -68,11 +67,7 @@ export default class FirstScreen extends React.Component {
                         <Icon name="arrow-forward" />
                     </Button>
                 </View>
-
                 <FooterApp navigation={this.props.navigation} />
-
-
-
             </Container>
         );
     }
